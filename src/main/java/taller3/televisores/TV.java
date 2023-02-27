@@ -39,9 +39,9 @@ public void setPrecio(int precio) {
 public int getPrecio() {
 	return this.precio;
 }
-public void setVolumen(int volumen) {
-	if (this.estado==true && volumen >=0 && volumen <= 7){
-	this.volumen=volumen;
+public void setVolumen(int vol) {
+	if (this.estado==true && vol >=0 && vol <= 7){
+	this.volumen=vol;
 }
 }
 public int getVolumen() {
@@ -75,13 +75,13 @@ public void canalDown() {
     }
 }
 public void volumenUp() {
-    if (estado==true && canal > 0) {
-        canal++;
+    if (estado==true && this.volumen > 0) {
+        this.volumen++;
     }
 }
 public void volumenDown() {
-    if (estado==true && canal < 7) {
-        canal--;
+    if (estado==true && this.volumen < 7) {
+        this.volumen--;
     }
 }
 }
