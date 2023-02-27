@@ -15,6 +15,9 @@ public TV(Marca marca, boolean estado){
 	numTV=numTV++;
 }
 
+public void setNumTV(int numTV) {
+	this.numTV=numTV;
+}
 public int getNumTV() {
 	return numTV;
 }
@@ -48,19 +51,25 @@ public void setCanal(int canal) {
 public int getCanal() {
 	return canal;
 }
+
+public boolean getEstado() {
+	return estado;
+}
+public void setEstado(boolean estado) {
+	this.estado = estado;
+}
+
+
+public void canalUp() {
+    if (estado && canal < 120) {
+        canal++;
+    }
+}
 public void turnOn() {
 	estado=true;
 }
 public void turnOff() {
 	estado=false;
-}
-public boolean getEstado() {
-	return estado;
-}
-public void canalUp() {
-    if (estado && canal < 120) {
-        canal++;
-    }
 }
 public void canalDown() {
     if (estado && canal > 1) {
