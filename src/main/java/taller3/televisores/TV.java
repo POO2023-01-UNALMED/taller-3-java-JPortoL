@@ -12,7 +12,7 @@ Control control;
 public TV(Marca marca, boolean estado){
 	this.marca=marca;
 	this.estado=estado;
-	numTV++;
+	TV.numTV++;
 }
 
 static public void setNumTV(int mnumTV) {
