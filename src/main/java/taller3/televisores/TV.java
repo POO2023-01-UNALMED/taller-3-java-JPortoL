@@ -7,8 +7,8 @@ private int precio=500;
 private boolean estado;
 private int volumen=1;
 private int numTV=0;
-
 Control control;
+
 public TV(Marca marca, boolean estado){
 	this.marca=marca;
 	this.estado=estado;
