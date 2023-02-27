@@ -75,12 +75,12 @@ public void canalDown() {
     }
 }
 public void volumenUp() {
-    if (estado==true && this.volumen > 0) {
+    if (estado==true && this.volumen < 7) {
         this.volumen++;
     }
 }
 public void volumenDown() {
-    if (estado==true && this.volumen < 7) {
+    if (estado==true && this.volumen > 0) {
         this.volumen--;
     }
 }
