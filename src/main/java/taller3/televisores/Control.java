@@ -27,7 +27,7 @@ public void volumenDown() {
 	tv.volumenDown();
 }
 public void setCanal(int canal) {
-	tv.canal=canal;
+	tv.setCanal(canal);
 }
 public void enlazar(TV tv) {
 	this.tv=tv;
