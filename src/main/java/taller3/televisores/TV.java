@@ -6,17 +6,17 @@ int canal=1;
 private int precio=500;
 private boolean estado;
 private int volumen=1;
-private int numTV=0;
+static private int numTV=0;
 
 Control control;
 public TV(Marca marca, boolean estado){
 	this.marca=marca;
 	this.estado=estado;
-	numTV=numTV++;
+	numTV=numTV+1;
 }
 
-public void setNumTV(int numTV) {
-	this.numTV=numTV;
+static public void setNumTV(int mnumTV) {
+	numTV=mnumTV;
 }
 public int getNumTV() {
 	return numTV;
