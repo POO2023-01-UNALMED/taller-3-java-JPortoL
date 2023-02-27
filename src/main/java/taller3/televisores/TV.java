@@ -75,13 +75,13 @@ public void canalDown() {
     }
 }
 public void volumenUp() {
-    if (estado && canal > 0) {
-        canal--;
+    if (estado==true && canal > 0) {
+        canal++;
     }
 }
 public void volumenDown() {
-    if (estado && canal < 7) {
-        canal++;
+    if (estado==true && canal < 7) {
+        canal--;
     }
 }
 }
